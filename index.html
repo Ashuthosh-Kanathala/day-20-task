@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="mainContainer">
+      <h2>INCOME - EXPENSES CALCULATOR</h2>
+      <div id="displayTotal">
+        <p>Total Income: <span id="totalIncome">0</span></p>
+        <p>Total Expenses: <span id="totalExpenses">0</span></p>
+        <p>Left Out Money: <span id="leftOutMoney">0</span></p>
+      </div>
+
+      <div id="selectors">
+        <h3>Select the category</h3>
+        <input type="radio" name="choices" id="option1" value="option1" />
+        <label for="option1">All</label>
+        <input type="radio" name="choices" id="option2" value="option2" />
+        <label for="option2">Income</label>
+        <input type="radio" name="choices" id="option3" value="option3" />
+        <label for="option3">Expenses</label>
+      </div>
+      <div id="inputDetails">
+        <input
+          type="text"
+          name="income"
+          id="incomeinput"
+          placeholder="Enter your amount"
+        />
+        <br />
+
+        <input
+          type="text"
+          name="description"
+          id="descriptioninput"
+          placeholder="Enter the description"
+        />
+        <br />
+        <select name="typeOf" id="typeOf">
+          <option value="" disabled selected>Select the value</option>
+          <option value="income">INCOME</option>
+          <option value="expenses">EXPENSES</option>
+        </select>
+        <button id="addInput">ADD</button>
+      </div>
+      <div id="displayContent">
+        <table>
+          <thead>
+            <tr>
+              <th>Amount</th>
+              <th>Description</th>
+              <th>Category</th>
+              <th>Options</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="behave.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 2px solid red;
+  border-radius: 12px;
+  width: 900px;
+  height: 1200px;
+}
+
+#incomeinput,
+#descriptioninput {
+  width: 300px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 2px solid darkcyan;
+  margin: 20px;
+}
+#typeOf {
+  width: 200px;
+  height: 40px;
+  border-radius: 12px;
+  border: 2px solid darkcyan;
+  margin: 20px;
+  line-height: 1.2;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+#addInput {
+  width: 120px;
+  height: 40px;
+  border: 2px solid black;
+  background-color: cornflowerblue;
+  color: rgb(2, 37, 103);
+  border-radius: 12px;
+}
+
+table {
+  border-spacing: 15px;
+}
+th {
+  padding: 60px;
+}
